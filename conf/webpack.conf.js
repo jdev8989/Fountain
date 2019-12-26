@@ -35,7 +35,9 @@ module.exports = {
         exclude: /node_modules/,
         loaders: [
           'react-hot-loader',
-          'ts-loader'
+          //'ts-loader'
+          'ts-loader?' + JSON.stringify({ignoreDiagnostics:[2345, 2307]})
+
         ]
       }
     ]
